@@ -1,131 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="An accessible and SEO-friendly portfolio"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Agmuasie Belay</title>
-  </head>
-  <body>
-    <header>
-      <h1 id="logo">Agmuasie Belay</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h1>Welcome</h1>
-        <h2>Creative Front End developer, based in Ethiopia.</h2>
-        <p class="summary">
-          My name is Agmuasie Belay developer based in Addis Ababa, Ethiopia. I
-          have worked on a wide range of front-end and machine learning
-          projects, from library management to plant disease detection
-          platforms, with a focus on creating clean, well-crafted interfaces
-          that not only look great but also provide a seamless user experience.
-        </p>
-        <h3 class="cv">
-          <a href="Agmuasie-Belay-Front-End-Developer-CV.pdf" download class="download-btn"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M.5 9.9v4.6h15V9.9h-1v3.6H1.5V9.9h-1zm7-9.4v8.2l3.9-3.9.7.7-5.1 5.1-5.1-5.1.7-.7 3.9 3.9V.5h1z"
-              />
-            </svg>
-            <span class="text">Download CV</span></a
-          >
-        </h3>
-      </section>
-      <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="card-container">
-          <article class="card">
-            <h3 >Library Manager System</h3>
-            <img src="library-manager.png" alt="a picture of library manager system dashboard" width="250" height="125">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-              doloremque asperiores. Vitae eveniet voluptate eligendi ea
-              consequatur molestias repellat officiis aliquid doloribus!
-              Incidunt ab repellat sed minus soluta! Libero, soluta.
-            </p>
-        </article>
-          <article class="card">
-            <h3>Blog Post Website</h3>
-            <img src="blog-post.png" alt="a picture of blog post website" width="250" height="125">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-              doloremque asperiores. Vitae eveniet voluptate eligendi ea
-              consequatur molestias repellat officiis aliquid doloribus!
-              Incidunt ab repellat sed minus soluta! Libero, soluta.
-            </p>
-        </article>
-          <article class="card">
-            <h3 >Demographic Data Collection App</h3>
-            <img src="data-collection.png" alt="a picture of demographic data collection app">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-              doloremque asperiores. Vitae eveniet voluptate eligendi ea
-              consequatur molestias repellat officiis aliquid doloribus!
-              Incidunt ab repellat sed minus soluta! Libero, soluta.
-            </p>
-        </article>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      padding: 1rem;
+    }
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Enhanced Form Example</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
+  </header>
 
-      <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>MySQL</li>
-          <li>Python</li>
-        </ul>
-      </section>
+  <main>
+    <section>
+      <h2>Example of Lists & Table</h2>
+      <table border="1">
+        <tr>
+          <th>Roman</th>
+          <th>Arabic</th>
+          <th>Greek</th>
+        </tr>
+        <tr>
+          <td>
+            <ol style="list-style-type: upper-roman">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+          <td>
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+          <td>
+            <ol style="list-style-type: lower-greek">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email me at
-          <a href="mailto:agmuasie.belay71@gmail.com"
-            >agmuasie.belay71@gmail.com</a
-          >
-        </p>
-        <p>Alternatively, you can put your message here</p>
-        <form action="#" id="form">
-          <label for="email-input">Email</label>
-          <input
-            type="email"
-            id="email-input"
-            name="email-input"
-            placeholder="Enter your email"
-            required
-          />
-          <label for="message">Your message here:</label>
-          <textarea
-            type="text"
-            id="message"
-            name="message"
-            placeholder="Add your message here"
-            required
-          ></textarea>
+    <section>
+      <h2>Media Example</h2>
+      <img src="https://via.placeholder.com/200" alt="Sample image" width="200" />
+    </section>
+
+    <section>
+      <h2>Consent Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <label for="name">Full Name
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus autocomplete="name">
+          </label>
+
+          <label for="password">Password
+            <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="new-password">
+          </label>
+
+          <label for="email">Email
+            <input type="email" id="email" name="email" placeholder="Email address" required autocomplete="email">
+          </label>
+
+          <label for="readonly-field">Read-Only Info
+            <input type="text" id="readonly-field" value="Read-only content" readonly>
+          </label>
+
+          <label for="date">Choose Date
+            <input type="date" id="date" name="date" required>
+          </label>
+
+          <label for="file">Upload File
+            <input type="file" id="file" name="file" required>
+          </label>
+
+          <h4>What do you want to receive?</h4>
+          <label><input type="checkbox" name="updates" value="email" checked> Email</label>
+          <label><input type="checkbox" name="updates" value="newsletter"> Newsletter</label>
+          <label><input type="checkbox" name="updates" value="social"> Social Media</label>
+
+          <h4>Do you agree to the terms?</h4>
+          <label><input type="radio" name="consent" value="yes" required> Yes</label>
+          <label><input type="radio" name="consent" value="no"> No</label>
+
+          <label for="country">Country
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="ET">Ethiopia</option>
+              <option value="KE">Kenya</option>
+              <option value="RW">Rwanda</option>
+              <option value="EG">Egypt</option>
+            </select>
+          </label>
+
           <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 Agmuasie Belay. All rights reserved.</p>
-    </footer>
-  </body>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
 </html>
