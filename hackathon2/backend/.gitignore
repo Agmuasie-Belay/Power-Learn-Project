@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.Python
+
+# Flask instance folder (contains config with secrets)
+instance/
+
+# Flask cache, session, or uploads
+*.sqlite3
+*.db
+*.log
+*.pid
+
+# Environment variables
+.env
+.env.*
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MySQL / Database
+*.sql
+*.dump
+*.mysql
+# If you have local database files you don’t want to commit
+
+# Byte-compiled / temp files
+*.swp
+*~
