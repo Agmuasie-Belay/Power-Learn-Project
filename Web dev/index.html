@@ -1,127 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enhanced Form</title>
-  <style>
-    body {
-      padding: 10px;
-      font-family: Arial, sans-serif;
-    }
-    th, td {
-      padding: 1rem;
-    }
-    fieldset {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 1rem;
-    }
-    label {
-      display: flex;
-      flex-direction: column;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Fundamentals Assignment</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>HTML5 Enhanced Form Example</h1>
-    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
-  </header>
+  <h1>JavaScript Fundamentals Demo</h1>
 
-  <main>
-    <section>
-      <h2>Example of Lists & Table</h2>
-      <table border="1">
-        <tr>
-          <th>Roman</th>
-          <th>Arabic</th>
-          <th>Greek</th>
-        </tr>
-        <tr>
-          <td>
-            <ol style="list-style-type: upper-roman">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ol>
-          </td>
-          <td>
-            <ol>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ol>
-          </td>
-          <td>
-            <ol style="list-style-type: lower-greek">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ol>
-          </td>
-        </tr>
-      </table>
-    </section>
+  <!-- Part 1: Input & Result -->
+  <section>
+    <h2>Part 1: JavaScript Basics</h2>
+    <label for="ageInput">Enter your age:</label>
+    <input type="number" id="ageInput">
+    <button id="checkAgeBtn">Check Age</button>
+    <p id="ageResult"></p>
+  </section>
 
-    <section>
-      <h2>Media Example</h2>
-      <img src="https://via.placeholder.com/200" alt="Sample image" width="200" />
-    </section>
+  <!-- Part 2: Functions -->
+  <section>
+    <h2>Part 2: Functions</h2>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+    <button id="sumBtn">Calculate Sum</button>
+    <p id="sumResult"></p>
+  </section>
 
-    <section>
-      <h2>Consent Form</h2>
-      <form action="#" method="post" autocomplete="on">
-        <fieldset>
-          <label for="name">Full Name
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus autocomplete="name">
-          </label>
+  <!-- Part 3: Loops -->
+  <section>
+    <h2>Part 3: Loops</h2>
+    <button id="showListBtn">Show Numbers 1-5</button>
+    <ul id="numberList"></ul>
+  </section>
 
-          <label for="password">Password
-            <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="new-password">
-          </label>
+  <!-- Part 4: DOM Manipulation -->
+  <section>
+    <h2>Part 4: DOM Manipulation</h2>
+    <button id="toggleBtn">Toggle Highlight</button>
+    <p id="highlightText">This text will be highlighted when you click the button.</p>
 
-          <label for="email">Email
-            <input type="email" id="email" name="email" placeholder="Email address" required autocomplete="email">
-          </label>
+    <button id="addItemBtn">Add Item</button>
+    <ul id="dynamicList"></ul>
+  </section>
 
-          <label for="readonly-field">Read-Only Info
-            <input type="text" id="readonly-field" value="Read-only content" readonly>
-          </label>
-
-          <label for="date">Choose Date
-            <input type="date" id="date" name="date" required>
-          </label>
-
-          <label for="file">Upload File
-            <input type="file" id="file" name="file" required>
-          </label>
-
-          <h4>What do you want to receive?</h4>
-          <label><input type="checkbox" name="updates" value="email" checked> Email</label>
-          <label><input type="checkbox" name="updates" value="newsletter"> Newsletter</label>
-          <label><input type="checkbox" name="updates" value="social"> Social Media</label>
-
-          <h4>Do you agree to the terms?</h4>
-          <label><input type="radio" name="consent" value="yes" required> Yes</label>
-          <label><input type="radio" name="consent" value="no"> No</label>
-
-          <label for="country">Country
-            <select id="country" name="country" required>
-              <option value="" disabled selected>Select an option</option>
-              <option value="ET">Ethiopia</option>
-              <option value="KE">Kenya</option>
-              <option value="RW">Rwanda</option>
-              <option value="EG">Egypt</option>
-            </select>
-          </label>
-
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
