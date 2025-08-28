@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Mastering JavaScript Fundamentals
 
 ## Overview
@@ -39,6 +39,7 @@ This assignment focuses on core JavaScript concepts including **variables**, **c
 
 ## Author
 Agmuasie Belay
+
 =======
 # Assignment: HTML5 + Accessibility & SEO Basics
 
