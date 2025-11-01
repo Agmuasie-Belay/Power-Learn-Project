@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS + JS Animations Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>🎬 Bringing Pages to Life</h1>
+    <div class="controls">
+      <button id="theme-toggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Part 1: CSS animated button & pulsing box -->
+    <section>
+      <h2>CSS Animations</h2>
+      <button class="animated-btn">Hover Me</button>
+      <div class="box" aria-hidden="true"></div>
+    </section>
+
+    <!-- Counter -->
+    <section>
+      <h2>Counter</h2>
+      <button id="increment-btn">Increment</button>
+      <p>Counter: <span id="counter">0</span></p>
+    </section>
+
+    <!-- Functions demo -->
+    <section>
+      <h2>Functions (scope / parameters / return)</h2>
+      <p>Global value: <strong id="global-val">5</strong></p>
+      <button id="calc-btn">Calculate Square</button>
+      <p>Result: <span id="result">-</span></p>
+    </section>
+
+    <!-- JS-triggered animation -->
+    <section>
+      <h2>JS-triggered Animation</h2>
+      <button id="animate-btn">Animate the Box</button>
+      <div class="trigger-box" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

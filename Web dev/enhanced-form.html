@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      padding: 1rem;
+    }
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Enhanced Form Example</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Example of Lists & Table</h2>
+      <table border="1">
+        <tr>
+          <th>Roman</th>
+          <th>Arabic</th>
+          <th>Greek</th>
+        </tr>
+        <tr>
+          <td>
+            <ol style="list-style-type: upper-roman">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+          <td>
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+          <td>
+            <ol style="list-style-type: lower-greek">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Example</h2>
+      <img src="https://via.placeholder.com/200" alt="Sample image" width="200" />
+    </section>
+
+    <section>
+      <h2>Consent Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <label for="name">Full Name
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus autocomplete="name">
+          </label>
+
+          <label for="password">Password
+            <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="new-password">
+          </label>
+
+          <label for="email">Email
+            <input type="email" id="email" name="email" placeholder="Email address" required autocomplete="email">
+          </label>
+
+          <label for="readonly-field">Read-Only Info
+            <input type="text" id="readonly-field" value="Read-only content" readonly>
+          </label>
+
+          <label for="date">Choose Date
+            <input type="date" id="date" name="date" required>
+          </label>
+
+          <label for="file">Upload File
+            <input type="file" id="file" name="file" required>
+          </label>
+
+          <h4>What do you want to receive?</h4>
+          <label><input type="checkbox" name="updates" value="email" checked> Email</label>
+          <label><input type="checkbox" name="updates" value="newsletter"> Newsletter</label>
+          <label><input type="checkbox" name="updates" value="social"> Social Media</label>
+
+          <h4>Do you agree to the terms?</h4>
+          <label><input type="radio" name="consent" value="yes" required> Yes</label>
+          <label><input type="radio" name="consent" value="no"> No</label>
+
+          <label for="country">Country
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="ET">Ethiopia</option>
+              <option value="KE">Kenya</option>
+              <option value="RW">Rwanda</option>
+              <option value="EG">Egypt</option>
+            </select>
+          </label>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
